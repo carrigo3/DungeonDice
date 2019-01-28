@@ -15,25 +15,48 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultsLabel: UILabel!
 
     @IBAction func fourSided(_ sender: UIButton) {
-        resultsLabel.text = "You rolled a 4 sided dice and got a \(Int.random(in: 1...4))"
+        let sides = 4
+        let roll = Int.random(in: 1...sides)
+        print(roll)
+        resultsLabel.text = "You rolled a \(sides)-sided dice and got a \(roll)."
+        //my way
+        //resultsLabel.text = "You rolled a 4 sided dice and got a \(Int.random(in: 1...4))"
     }
     @IBAction func sixSided(_ sender: UIButton) {
-        resultsLabel.text = "You rolled a 6 sided dice and got a \(Int.random(in: 1...6))"
+        let sides = 4
+        let roll = Int.random(in: 1...sides)
+        print(roll)
+        resultsLabel.text = "You rolled a \(sides)-sided dice and got a \(roll)."
     }
     @IBAction func eightSided(_ sender: UIButton) {
-        resultsLabel.text = "You rolled an 8 sided dice and got a \(Int.random(in: 1...8))"
+        let sides = 4
+        let roll = Int.random(in: 1...sides)
+        print(roll)
+        resultsLabel.text = "You rolled a \(sides)-sided dice and got a \(roll)."
     }
     @IBAction func tenSided(_ sender: UIButton) {
-        resultsLabel.text = "You rolled a 10 sided dice and got a \(Int.random(in: 1...10))"
+        let sides = 4
+        let roll = Int.random(in: 1...sides)
+        print(roll)
+        resultsLabel.text = "You rolled a \(sides)-sided dice and got a \(roll)."
     }
     @IBAction func twelveSided(_ sender: UIButton) {
-        resultsLabel.text = "You rolled a 12 sided dice and got a \(Int.random(in: 1...12))"
+        let sides = 4
+        let roll = Int.random(in: 1...sides)
+        print(roll)
+        resultsLabel.text = "You rolled a \(sides)-sided dice and got a \(roll)."
     }
     @IBAction func twentySided(_ sender: UIButton) {
-        resultsLabel.text = "You rolled a 20 sided dice and got a \(Int.random(in: 1...20))"
+        let sides = 4
+        let roll = Int.random(in: 1...sides)
+        print(roll)
+        resultsLabel.text = "You rolled a \(sides)-sided dice and got a \(roll)."
     }
     @IBAction func hundredSided(_ sender: UIButton) {
-        resultsLabel.text = "You rolled a 100 sided dice and got a \(Int.random(in: 1...100))"
+        let sides = 4
+        let roll = Int.random(in: 1...sides)
+        print(roll)
+        resultsLabel.text = "You rolled a \(sides)-sided dice and got a \(roll)."
     }
     
 }

@@ -18,30 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dungeon Dice!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ele-xO-JjG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dungeon Dice!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ele-xO-JjG">
                                 <rect key="frame" x="16" y="44" width="343" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Bcg-Ba-2qi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="28"/>
                                 <color key="textColor" red="0.074178605929199337" green="0.00019225223670948921" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnZ-C7-oMZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnZ-C7-oMZ">
                                 <rect key="frame" x="16" y="97" width="343" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2CK-y2-oJ1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <color key="textColor" red="0.66666668653488159" green="0.14983605271984063" blue="0.051835824150526198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Dice to Roll:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0t-tc-k7l">
-                                <rect key="frame" x="16" y="205" width="343" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.66666668650000005" green="0.1498360527" blue="0.051835824150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wQ-1K-Ifl">
-                                <rect key="frame" x="12" y="235" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wQ-1K-Ifl">
+                                <rect key="frame" x="16" y="235" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Gyf-aw-CQJ"/>
+                                    <constraint firstAttribute="width" constant="54" id="LX1-2U-KWh"/>
+                                </constraints>
                                 <state key="normal" title="4-sided">
                                     <color key="titleColor" red="0.074178605930000002" green="0.0001922522367" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -49,9 +49,12 @@
                                     <action selector="fourSided:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gbm-Fq-eP2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6u4-fG-Lyc">
-                                <rect key="frame" x="160" y="235" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6u4-fG-Lyc">
+                                <rect key="frame" x="160.66666666666666" y="235" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ogp-g9-EaB"/>
+                                    <constraint firstAttribute="width" constant="54" id="cic-FF-anL"/>
+                                </constraints>
                                 <state key="normal" title="6-sided">
                                     <color key="titleColor" red="0.074178605930000002" green="0.0001922522367" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -59,9 +62,12 @@
                                     <action selector="sixSided:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LsN-k8-hXL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isi-40-ZBi">
-                                <rect key="frame" x="309" y="235" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isi-40-ZBi">
+                                <rect key="frame" x="305" y="235" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xgr-UA-Gbf"/>
+                                    <constraint firstAttribute="width" constant="54" id="z2x-NC-DAF"/>
+                                </constraints>
                                 <state key="normal" title="8-sided">
                                     <color key="titleColor" red="0.074178605930000002" green="0.0001922522367" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -69,9 +75,12 @@
                                     <action selector="eightSided:" destination="BYZ-38-t0r" eventType="touchUpInside" id="btv-Rh-fb2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twq-Bn-AYA">
-                                <rect key="frame" x="9" y="284" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twq-Bn-AYA">
+                                <rect key="frame" x="16" y="305" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="5Hq-nZ-Xne"/>
+                                    <constraint firstAttribute="height" constant="30" id="hxN-Ck-dgF"/>
+                                </constraints>
                                 <state key="normal" title="10-sided">
                                     <color key="titleColor" red="0.074178605930000002" green="0.0001922522367" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -79,9 +88,12 @@
                                     <action selector="tenSided:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wcq-jm-qRg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gp-03-WAV">
-                                <rect key="frame" x="305" y="284" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gp-03-WAV">
+                                <rect key="frame" x="296" y="305" width="63" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="8l9-mv-gTI"/>
+                                    <constraint firstAttribute="height" constant="30" id="CVK-Jj-fxM"/>
+                                </constraints>
                                 <state key="normal" title="20-sided">
                                     <color key="titleColor" red="0.074178605930000002" green="0.0001922522367" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -89,9 +101,12 @@
                                     <action selector="twentySided:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUq-O6-Jt9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0G-hj-uvS">
-                                <rect key="frame" x="152" y="335" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0G-hj-uvS">
+                                <rect key="frame" x="152.66666666666666" y="375" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="RTf-uK-iEd"/>
+                                    <constraint firstAttribute="height" constant="30" id="iLS-cj-uqo"/>
+                                </constraints>
                                 <state key="normal" title="100-sided">
                                     <color key="titleColor" red="0.074178605930000002" green="0.0001922522367" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -99,9 +114,12 @@
                                     <action selector="hundredSided:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHI-Ao-Ejs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4P-jd-6hX">
-                                <rect key="frame" x="157" y="284" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4P-jd-6hX">
+                                <rect key="frame" x="157.66666666666666" y="305" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="B8L-Na-ZxA"/>
+                                    <constraint firstAttribute="height" constant="30" id="GrC-Oi-C9K"/>
+                                </constraints>
                                 <state key="normal" title="12-sided">
                                     <color key="titleColor" red="0.074178605930000002" green="0.0001922522367" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -109,8 +127,42 @@
                                     <action selector="twelveSided:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUe-6x-7et"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Dice to Roll:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0t-tc-k7l">
+                                <rect key="frame" x="16" y="205" width="343" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="csd-qO-CTH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80132582594501667" blue="0.051653175515308458" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Twq-Bn-AYA" firstAttribute="top" secondItem="2wQ-1K-Ifl" secondAttribute="bottom" constant="40" id="0Hc-Q4-uOy"/>
+                            <constraint firstItem="k0G-hj-uvS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1UI-z7-aAJ"/>
+                            <constraint firstItem="6Gp-03-WAV" firstAttribute="top" secondItem="isi-40-ZBi" secondAttribute="bottom" constant="40" id="91z-og-blz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c0t-tc-k7l" secondAttribute="trailing" constant="16" id="CJ6-ud-iZO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="isi-40-ZBi" secondAttribute="trailing" constant="16" id="HdY-5I-ZHK"/>
+                            <constraint firstItem="2wQ-1K-Ifl" firstAttribute="top" secondItem="c0t-tc-k7l" secondAttribute="bottom" constant="8" id="Ifd-hH-gqf"/>
+                            <constraint firstItem="XnZ-C7-oMZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Jhc-Er-AmZ"/>
+                            <constraint firstItem="c0t-tc-k7l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MFZ-25-SpS"/>
+                            <constraint firstItem="k0G-hj-uvS" firstAttribute="top" secondItem="h4P-jd-6hX" secondAttribute="bottom" constant="40" id="QWJ-6d-EYc"/>
+                            <constraint firstItem="c0t-tc-k7l" firstAttribute="top" secondItem="XnZ-C7-oMZ" secondAttribute="bottom" constant="8" id="Rqi-ss-Z7Z"/>
+                            <constraint firstItem="isi-40-ZBi" firstAttribute="top" secondItem="c0t-tc-k7l" secondAttribute="bottom" constant="8" id="RsF-fw-CAl"/>
+                            <constraint firstItem="h4P-jd-6hX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T1P-3e-Lt9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Gp-03-WAV" secondAttribute="trailing" constant="16" id="VhD-wJ-KxF"/>
+                            <constraint firstItem="XnZ-C7-oMZ" firstAttribute="top" secondItem="Ele-xO-JjG" secondAttribute="bottom" constant="8" id="X8T-Vh-hul"/>
+                            <constraint firstItem="6u4-fG-Lyc" firstAttribute="top" secondItem="c0t-tc-k7l" secondAttribute="bottom" constant="8" id="XtZ-c7-z1B"/>
+                            <constraint firstItem="6u4-fG-Lyc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zb7-K0-ZCH"/>
+                            <constraint firstItem="h4P-jd-6hX" firstAttribute="top" secondItem="6u4-fG-Lyc" secondAttribute="bottom" constant="40" id="d9V-EP-COF"/>
+                            <constraint firstItem="Twq-Bn-AYA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f7N-MS-JsP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ele-xO-JjG" secondAttribute="trailing" constant="16" id="g20-bw-j4C"/>
+                            <constraint firstItem="Ele-xO-JjG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gly-J2-sqO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XnZ-C7-oMZ" secondAttribute="trailing" constant="16" id="k3U-pc-NNA"/>
+                            <constraint firstItem="Ele-xO-JjG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ooO-IB-6Ua"/>
+                            <constraint firstItem="2wQ-1K-Ifl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wv8-3R-Aml"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
